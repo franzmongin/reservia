@@ -1,44 +1,237 @@
-/* FONTS */
+/* BODY */
+body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  font-family: "Raleway", sans-serif;
+}
+/* //BODY */
 
 /* HEADER */
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  display: flex;
+  margin: 0px 30px 10px 30px;
+}
+#links {
+}
+#links ul {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#links li {
+  padding: 20px 10px;
+  margin: 0 10px;
+}
+#links li.active {
+  border-top: 2px solid #0065fc;
+}
+#links a {
+  text-decoration: none;
+  color: grey;
+}
+#links .active a {
+  color: #0065fc;
+}
+a#login-link {
+  color: #0065fc;
+  font-weight: bold;
+}
+/* //HEADER */
+
+/* SEARCHBAR and filter*/
+#search-and-filter {
+  margin: 10px 30px 10px 30px;
+}
+#search-bar {
+  display: flex;
+  height: 30px;
   align-items: center;
+  margin-bottom: 40px;
 }
-header ul {
-  list-style-type: none;
+#search-bar-button {
+  color: white;
+  background-color: #0065fc;
+  padding: 0 10px;
+  border-radius: 0 10px 10px 0;
 }
-header ul li {
+#search-bar-icon,
+#search-bar-input,
+#search-bar-button {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+#search-bar-button {
+}
+#search-bar-input {
+  padding: 0 10px;
+  font-weight: bold;
+  border: 1px solid #f2f2f2;
+}
+#search-bar-icon {
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+}
+h2 {
+  /* width: 100%; */
+}
+.filter {
   display: inline-block;
-  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  /* padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px; */
 }
-header li a {
-  margin: 20px 20px;
+.filter i {
+  color: #0065fc;
+  /* padding: 5px;
+  margin-right: 10px;
+  border-radius: 40px;
+  background-color: #deebff; */
 }
 
-.hostings {
+/* //SEARCHBAR */
+
+/* FONTS */
+
+/* LOGO */
+
+ul {
+  list-style-type: none;
+}
+
+#hostings {
   display: flex;
 }
+#hostings img {
+}
+#all-hostings-container {
+  width: 70%;
+  background-color: #f2f2f2;
+  margin: 10px 15px 10px 30px;
+  padding: 10px 20px;
+}
+#all-hostings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.all-hosting-bloc {
+  width: 33%;
+  /* height: 264px; */
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.all-hosting-bloc img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+#popular-hostings-container {
+  width: 30%;
+  background-color: #f2f2f2;
+  margin: 10px 30px 10px 15px;
+  padding: 10px 20px;
+}
+#popular-hostings {
+  display: flex;
+  flex-direction: column;
+}
+.popular-bloc {
+  display: flex;
+  width: 100%;
+  height: 160px;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.popular-bloc img {
+  width: 37%;
+  object-fit: cover;
+}
+#hostings h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+#hostings h3 {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+}
+#hostings h4 {
+  font-weight: normal;
+  font-size: 0.98em;
+  margin: 0;
+}
+
+/* ACTIVITIES */
+#activities img {
+  display: none;
+}
+
+/* SMARTPHONE */
 @media only screen and (max-width: 767px) {
-  /* smartphone */
-  #popular-hostings {
-    background-color: grey;
+  /* HEADER */
+  /* header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
   }
-  #popular-hostings,
+  header ul li {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  header ul li a {
+    color: grey;
+  }
+  .active {
+    border-bottom: 3px solid #0065fc;
+  }
+  .active a {
+    color: #0065fc;
+  }
+  header nav a {
+    text-decoration: none;
+  }
+  #login-link {
+    color: #0065fc;
+    text-decoration: none;
+    position: absolute;
+    top: 17px;
+    right: 0;
+  }
+
+  #popular-hostings-container {
+  }
+  #popular-hostings-container,
   #all-hostings {
     display: flex;
     flex-direction: column;
   }
-  .hostings {
+  #hostings {
     flex-direction: column;
   }
+  #hostings img {
+    width: 100%;
+  } */
 }
 
 @media only screen and (min-width: 768px) {
-  /* tablettes et ordinateurs */
-  #all-hostings,
-  #popular-hostings {
-    background-color: grey;
-  }
 }
