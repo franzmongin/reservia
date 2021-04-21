@@ -146,18 +146,17 @@ ul {
 }
 #hostings img {
 }
-#all-hostings-container {
+#all-hostings {
   width: 70%;
   background-color: #f2f2f2;
   margin: 10px 15px 10px 30px;
   padding: 10px 20px;
   border-radius: 15px;
-}
-#all-hostings {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
+}
+#all-hostings h2 {
+  width: 100%;
 }
 .all-hosting-bloc {
   width: 33%;
