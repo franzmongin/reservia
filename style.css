@@ -198,7 +198,7 @@ h2 {
   color: lightgrey;
 }
 #all-hostings {
-  flex: 2 1 290px;
+  flex: 2 1 453px;
   background-color: #f2f2f2;
   margin: 10px 15px 10px 30px;
   padding: 10px 20px;
@@ -232,7 +232,7 @@ h2 {
   object-fit: cover;
 }
 #popular-hostings {
-  flex: 1 1 229px;
+  flex: 1 1 226px;
   row-gap: 20px;
   background-color: #f2f2f2;
   margin: 10px 30px 10px 15px;
