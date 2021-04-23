@@ -270,7 +270,7 @@ h2 {
 #activities {
   display: flex;
   justify-content: space-around;
-  height: 540px;
+  height: 420px;
 }
 #activities img {
   /* display: none; */
@@ -301,21 +301,21 @@ h2 {
   /* justify-content: flex-end; */
 }
 .full-bloc img {
-  height: 500px;
+  height: 380px;
 }
 .splitted-bloc {
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 20px;
 }
 .splitted-bloc img {
-  height: 215px;
+  height: 160px;
 }
 .half-bloc {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
   /* border: 1px solid lightgreen; */
-  height: 50%;
+  /* height: 50%; */
   border-radius: 20px;
 }
 .full-bloc,
