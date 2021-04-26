@@ -11,7 +11,7 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -26,7 +26,9 @@
         <ul>
           <li class="active"><a href="#hostings">Hébergements</a></li>
           <li><a href="#activities">Activités</a></li>
-          <li><a href="" id="login-link">S'inscrire</a></li>
+          <li id="login-link-element">
+            <a href="" id="login-link">S'inscrire</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -39,10 +41,13 @@
         <div id="search-bar">
           <i class="fas fa-map-marker-alt" id="search-bar-icon"></i>
           <input type="text" id="search-bar-input" />
-          <span id="search-bar-button"> Rechercher </span>
+          <div id="search-bar-button">
+            <span id="search-text">Rechercher</span
+            ><i id="search-icon" class="fas fa-search"></i>
+          </div>
         </div>
         <div id="filters">
-          <div>Filtres</div>
+          <div id="filter-label">Filtres</div>
           <div class="filter">
             <div class="filter-icon">
               <i class="fas fa-money-bill-wave fa-sm"></i>
@@ -72,9 +77,9 @@
 
       <!-- HOSTINGS-->
       <div id="hostings">
-        <section id="all-hostings">
+        <aside id="all-hostings">
           <h2>Hébergements à Marseille</h2>
-          <div class="all-hosting-bloc">
+          <a href="" class="all-hosting-bloc">
             <img
               src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
               alt="Auberge la Cannebière"
@@ -88,8 +93,8 @@
               <i class="fas fa-star fa-xs blue-star"></i>
               <i class="fas fa-star fa-xs grey-star"></i>
             </div>
-          </div>
-          <div class="all-hosting-bloc">
+          </a>
+          <a href="" class="all-hosting-bloc">
             <img
               src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
               alt="Hôtel du port"
@@ -103,8 +108,8 @@
               <i class="fas fa-star fa-xs blue-star"></i>
               <i class="fas fa-star fa-xs blue-star"></i>
             </div>
-          </div>
-          <div class="all-hosting-bloc">
+          </a>
+          <a href="" class="all-hosting-bloc">
             <img
               src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
               alt="Hôtel Les mouettes"
@@ -118,8 +123,8 @@
               <i class="fas fa-star fa-xs blue-star"></i>
               <i class="fas fa-star fa-xs grey-star"></i>
             </div>
-          </div>
-          <div class="all-hosting-bloc">
+          </a>
+          <a href="" class="all-hosting-bloc">
             <img
               src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
               alt="Hôtel de la mer"
@@ -133,8 +138,8 @@
               <i class="fas fa-star fa-xs grey-star"></i>
               <i class="fas fa-star fa-xs grey-star"></i>
             </div>
-          </div>
-          <div class="all-hosting-bloc">
+          </a>
+          <a href="" class="all-hosting-bloc">
             <img
               src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
               alt="Auberge Le Panier"
@@ -148,8 +153,8 @@
               <i class="fas fa-star fa-xs blue-star"></i>
               <i class="fas fa-star fa-xs grey-star"></i>
             </div>
-          </div>
-          <div class="all-hosting-bloc">
+          </a>
+          <a href="" class="all-hosting-bloc">
             <img
               src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
               alt="Hôtel chez Amina"
@@ -163,12 +168,14 @@
               <i class="fas fa-star fa-xs blue-star"></i>
               <i class="fas fa-star fa-xs blue-star"></i>
             </div>
-          </div>
+          </a>
           <div id="get-more">Afficher plus</div>
-        </section>
-        <section id="popular-hostings">
-          <h2>Les plus populaires</h2>
-          <div class="popular-bloc">
+        </aside>
+        <aside id="popular-hostings">
+          <h2 id="popular-heading">
+            Les plus populaires<i class="fas fa-chart-line"></i>
+          </h2>
+          <a href="" class="popular-bloc">
             <img
               src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
               alt="Le soleil du matin"
@@ -186,8 +193,8 @@
                 <i class="fas fa-star fa-xs blue-star"></i>
               </div>
             </div>
-          </div>
-          <div class="popular-bloc">
+          </a>
+          <a href="" class="popular-bloc">
             <img
               src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
               alt="Au coeur de l'eau Chambre d'hôtes"
@@ -205,8 +212,8 @@
                 <i class="fas fa-star fa-xs grey-star"></i>
               </div>
             </div>
-          </div>
-          <div class="popular-bloc">
+          </a>
+          <a href="" class="popular-bloc">
             <img
               src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               alt="Hôtel Tout bleu et blanc"
@@ -224,8 +231,8 @@
                 <i class="fas fa-star fa-xs grey-star"></i>
               </div>
             </div>
-          </div>
-        </section>
+          </a>
+        </aside>
       </div>
 
       <!-- //HOSTINGS -->
@@ -233,51 +240,51 @@
       <section id="activities-container">
         <h2>Activités à Marseille</h2>
         <div id="activities">
-          <div class="activities-bloc full-bloc">
+          <a href="" class="activities-bloc full-bloc">
             <img
               src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               alt="Vieux Port"
             />
             <h3>Vieux Port</h3>
-          </div>
+          </a>
           <div class="activities-bloc splitted-bloc">
-            <div class="half-bloc">
+            <a href="" class="half-bloc">
               <img
                 src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                 alt="Fort de Pomègues"
               />
               <h3>Fort de Pomègues</h3>
-            </div>
-            <div class="half-bloc">
+            </a>
+            <a href="" class="half-bloc">
               <img
                 src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                 alt="Iles du Frioul"
               />
               <h3>Iles du Frioul</h3>
-            </div>
+            </a>
           </div>
-          <div class="activities-bloc full-bloc">
+          <a href="" class="activities-bloc full-bloc">
             <img
               src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
               alt="Parc National des Calanques"
             />
             <h3>Parc National des Calanques</h3>
-          </div>
+          </a>
           <div class="activities-bloc splitted-bloc">
-            <div class="half-bloc">
+            <a href="" class="half-bloc">
               <img
                 src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                 alt="Notre-Dame-de-la-Garde"
               />
               <h3>Notre-Dame-de-la-Garde</h3>
-            </div>
-            <div class="half-bloc">
+            </a>
+            <a href="" class="half-bloc">
               <img
                 src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                 alt="Parc Longchamp"
               />
               <h3>Parc Longchamp</h3>
-            </div>
+            </a>
           </div>
         </div>
       </section>
