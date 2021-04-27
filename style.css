@@ -286,6 +286,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 5px;
+  width: 63%;
 }
 #all-hostings,
 #popular-hostings {
@@ -478,6 +479,7 @@ footer h3 {
   .popular-bloc {
     margin-bottom: 20px;
   }
+
   #activities {
     flex-direction: column;
     height: auto;
