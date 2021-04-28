@@ -367,6 +367,8 @@ h2 {
 
 footer {
   margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 30px;
   display: flex;
   flex-direction: row;
@@ -517,5 +519,16 @@ footer h3 {
   }
   #filter-label {
     width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #activities {
+    align-items: center;
+  }
+  .activities-bloc {
+    width: 70%;
+  }
+  .activities-bloc img {
+    height: 200px;
   }
 }
