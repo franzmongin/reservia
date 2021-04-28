@@ -5,6 +5,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
+  font-size: 1em;
 }
 /* //BODY */
 
@@ -504,9 +505,6 @@ footer h3 {
   .activities-bloc img {
     height: 125px;
   }
-  footer {
-    flex-direction: column;
-  }
   footer div {
     width: 100%;
   }
@@ -519,6 +517,9 @@ footer h3 {
   }
   #filter-label {
     width: 100%;
+  }
+  footer {
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
