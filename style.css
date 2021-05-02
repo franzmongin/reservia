@@ -28,7 +28,7 @@ h1 {
   margin-bottom: 0;
 }
 h3 {
-  font-size: 0.8em;
+  font-size: 0.85em;
   font-weight: bold;
 }
 /* //GENERAL */
@@ -76,6 +76,7 @@ a#login-link {
   color: black;
   font-weight: bold;
   width: 100%;
+  margin-bottom: 20px;
 }
 #search-and-filter {
   display: flex;
@@ -87,12 +88,16 @@ a#login-link {
   align-items: center;
   margin-bottom: 20px;
 }
+#search-bar input::placeholder {
+  color: black;
+}
 #search-bar-button {
   color: white;
   background-color: #0065fc;
   padding: 0 10px;
   border-radius: 0 10px 10px 0;
   font-weight: bold;
+  margin-left: -3px;
 }
 #search-icon {
   display: none;
@@ -130,7 +135,7 @@ a#login-link {
   border-radius: 20px;
   align-items: center;
   margin-right: 10px;
-  height: 30px;
+  height: 35px;
 }
 .filter:hover {
   background-color: #0065fc;
@@ -150,8 +155,8 @@ a#login-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 32px;
-  width: 32px;
+  height: 37px;
+  width: 37px;
   background-color: #deebff;
   border-radius: 20px;
 }
@@ -162,6 +167,8 @@ a#login-link {
 #information {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 #info-logo {
   font-size: 12px;
@@ -197,6 +204,7 @@ ul {
 #popular-hostings img {
   border-radius: 20px 0 0 20px;
 }
+
 h2 {
   font-weight: bold;
   font-size: 1.1em;
@@ -204,7 +212,6 @@ h2 {
 #hostings h3 {
   margin: 0;
   margin-bottom: 3px;
-  font-size: 0.8em;
   font-weight: bold;
 }
 #hostings h4 {
@@ -239,7 +246,6 @@ h2 {
 .all-hosting-bloc {
   flex: 1 0 96px;
   min-width: 30%;
-  height: 180px;
   background-color: white;
   margin-bottom: 10px;
   padding: 3px;
@@ -248,11 +254,11 @@ h2 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .all-hosting-bloc img {
   height: 110px;
   object-fit: cover;
+  padding-bottom: 10px;
 }
 #popular-hostings {
   flex: 1 1 226px;
@@ -361,6 +367,7 @@ h2 {
 #activities-container {
   margin-right: 20px;
   margin-left: 20px;
+  margin-top: 20px;
 }
 #activities-container h2 {
   margin-left: 15px;
@@ -522,6 +529,8 @@ footer h3 {
     flex-direction: column;
   }
 }
+
+/* Tablettes */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   #activities {
     align-items: center;
@@ -531,5 +540,13 @@ footer h3 {
   }
   .activities-bloc img {
     height: 200px;
+  }
+}
+
+/* Laptops */
+@media screen and (min-width: 769px) {
+  #popular-hostings h2,
+  #all-hostings h2 {
+    margin-bottom: -5px;
   }
 }
