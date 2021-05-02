@@ -76,7 +76,7 @@ a#login-link {
   color: black;
   font-weight: bold;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 #search-and-filter {
   display: flex;
@@ -472,6 +472,7 @@ footer h3 {
   #popular-hostings {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
   }
   #all-hostings {
     background-color: white;
@@ -489,13 +490,16 @@ footer h3 {
   .popular-bloc {
     margin-bottom: 20px;
   }
-
+  #activities-container {
+    margin-top: 0;
+  }
   #activities {
     flex-direction: column;
     height: auto;
   }
   #activities-container h2 {
     margin-left: 0;
+    margin-top: 0;
   }
   .full-bloc,
   .half-bloc {
