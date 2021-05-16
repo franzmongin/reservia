@@ -13,6 +13,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  max-width: 1500px;
+  margin: auto;
 }
 /* //CONTAINER */
 
@@ -55,14 +57,15 @@ header {
   padding: 20px 10px;
   margin: 0 10px;
 }
-#links li.active {
+#links li:hover {
   border-top: 2px solid #0065fc;
+  padding-top: 18px;
 }
 #links a {
   text-decoration: none;
-  color: grey;
+  color: black;
 }
-#links .active a {
+#links li:hover a {
   color: #0065fc;
 }
 a#login-link {
